@@ -1,0 +1,189 @@
+/* Clean Footer */
+.clean-footer {
+  margin-top: auto;
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-top: 0.5px solid;
+  padding: 1rem 0;
+}
+
+/* Dark theme footer styles for all containers */
+.overview-clean.dark-theme .clean-footer,
+.overview-main-page.dark-theme .clean-footer,
+.overview-page.dark-theme .clean-footer,
+.client-dashboard-page.dark-theme .clean-footer,
+.select-account-page.dark-theme .clean-footer,
+.active-accounts-page.dark-theme .clean-footer,
+.inactive-accounts-page.dark-theme .clean-footer,
+.account-page.dark-theme .clean-footer,
+.expediente-page.dark-theme .clean-footer,
+.checklist-captura-page.dark-theme .clean-footer,
+.presentacion-inicial-page.dark-theme .clean-footer,
+.workhub-page.dark-theme .clean-footer,
+.construction-page.dark-theme .clean-footer {
+  background: rgba(28, 28, 30, 0.8);
+  border-top-color: rgba(84, 84, 88, 0.65);
+}
+
+/* Light theme footer styles for all containers */
+.overview-clean.light-theme .clean-footer,
+.overview-main-page.light-theme .clean-footer,
+.overview-page.light-theme .clean-footer,
+.client-dashboard-page.light-theme .clean-footer,
+.select-account-page.light-theme .clean-footer,
+.active-accounts-page.light-theme .clean-footer,
+.inactive-accounts-page.light-theme .clean-footer,
+.account-page.light-theme .clean-footer,
+.expediente-page.light-theme .clean-footer,
+.checklist-captura-page.light-theme .clean-footer,
+.presentacion-inicial-page.light-theme .clean-footer,
+.workhub-page.light-theme .clean-footer,
+.construction-page.light-theme .clean-footer {
+  background: rgba(255, 255, 255, 0.8);
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.6;
+  transition: color 0.3s ease;
+}
+
+/* Dark theme footer text */
+.overview-clean.dark-theme .footer-text,
+.overview-main-page.dark-theme .footer-text,
+.overview-page.dark-theme .footer-text,
+.client-dashboard-page.dark-theme .footer-text,
+.select-account-page.dark-theme .footer-text,
+.active-accounts-page.dark-theme .footer-text,
+.inactive-accounts-page.dark-theme .footer-text,
+.account-page.dark-theme .footer-text,
+.expediente-page.dark-theme .footer-text,
+.checklist-captura-page.dark-theme .footer-text,
+.presentacion-inicial-page.dark-theme .footer-text,
+.workhub-page.dark-theme .footer-text,
+.construction-page.dark-theme .footer-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Light theme footer text */
+.overview-clean.light-theme .footer-text,
+.overview-main-page.light-theme .footer-text,
+.overview-page.light-theme .footer-text,
+.client-dashboard-page.light-theme .footer-text,
+.select-account-page.light-theme .footer-text,
+.active-accounts-page.light-theme .footer-text,
+.inactive-accounts-page.light-theme .footer-text,
+.account-page.light-theme .footer-text,
+.expediente-page.light-theme .footer-text,
+.checklist-captura-page.light-theme .footer-text,
+.presentacion-inicial-page.light-theme .footer-text,
+.workhub-page.light-theme .footer-text,
+.construction-page.light-theme .footer-text {
+  color: #007AFF;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Dark theme logout button styles for all containers */
+.overview-clean.dark-theme .logout-btn,
+.overview-main-page.dark-theme .logout-btn,
+.overview-page.dark-theme .logout-btn,
+.client-dashboard-page.dark-theme .logout-btn,
+.select-account-page.dark-theme .logout-btn,
+.active-accounts-page.dark-theme .logout-btn,
+.inactive-accounts-page.dark-theme .logout-btn,
+.account-page.dark-theme .logout-btn,
+.expediente-page.dark-theme .logout-btn,
+.checklist-captura-page.dark-theme .logout-btn,
+.presentacion-inicial-page.dark-theme .logout-btn,
+.workhub-page.dark-theme .logout-btn,
+.construction-page.dark-theme .logout-btn {
+  background: rgba(255, 59, 48, 0.1);
+  color: #FF375F;
+  border: 1px solid rgba(255, 59, 48, 0.2);
+}
+
+.overview-clean.dark-theme .logout-btn:hover,
+.overview-main-page.dark-theme .logout-btn:hover,
+.overview-page.dark-theme .logout-btn:hover,
+.client-dashboard-page.dark-theme .logout-btn:hover,
+.select-account-page.dark-theme .logout-btn:hover,
+.active-accounts-page.dark-theme .logout-btn:hover,
+.inactive-accounts-page.dark-theme .logout-btn:hover,
+.account-page.dark-theme .logout-btn:hover,
+.expediente-page.dark-theme .logout-btn:hover,
+.checklist-captura-page.dark-theme .logout-btn:hover,
+.presentacion-inicial-page.dark-theme .logout-btn:hover,
+.workhub-page.dark-theme .logout-btn:hover,
+.construction-page.dark-theme .logout-btn:hover {
+  background: rgba(255, 59, 48, 0.2);
+  transform: scale(1.05);
+}
+
+/* Light theme logout button styles for all containers */
+.overview-clean.light-theme .logout-btn,
+.overview-main-page.light-theme .logout-btn,
+.overview-page.light-theme .logout-btn,
+.client-dashboard-page.light-theme .logout-btn,
+.select-account-page.light-theme .logout-btn,
+.active-accounts-page.light-theme .logout-btn,
+.inactive-accounts-page.light-theme .logout-btn,
+.account-page.light-theme .logout-btn,
+.expediente-page.light-theme .logout-btn,
+.checklist-captura-page.light-theme .logout-btn,
+.presentacion-inicial-page.light-theme .logout-btn,
+.workhub-page.light-theme .logout-btn,
+.construction-page.light-theme .logout-btn {
+  background: rgba(255, 59, 48, 0.1);
+  color: #FF3B30;
+  border: 1px solid rgba(255, 59, 48, 0.2);
+}
+
+.overview-clean.light-theme .logout-btn:hover,
+.overview-main-page.light-theme .logout-btn:hover,
+.overview-page.light-theme .logout-btn:hover,
+.client-dashboard-page.light-theme .logout-btn:hover,
+.select-account-page.light-theme .logout-btn:hover,
+.active-accounts-page.light-theme .logout-btn:hover,
+.inactive-accounts-page.light-theme .logout-btn:hover,
+.account-page.light-theme .logout-btn:hover,
+.expediente-page.light-theme .logout-btn:hover,
+.checklist-captura-page.light-theme .logout-btn:hover,
+.presentacion-inicial-page.light-theme .logout-btn:hover,
+.workhub-page.light-theme .logout-btn:hover,
+.construction-page.light-theme .logout-btn:hover {
+  background: rgba(255, 59, 48, 0.15);
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

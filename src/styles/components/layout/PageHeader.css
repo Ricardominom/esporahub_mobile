@@ -1,0 +1,582 @@
+/* Clean Header */
+.clean-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 0.5px solid;
+    transition: all 0.3s ease;
+}
+
+/* Dark theme header styles for all containers */
+.overview-clean.dark-theme .clean-header,
+.overview-main-page.dark-theme .clean-header,
+.overview-page.dark-theme .clean-header,
+.client-dashboard-page.dark-theme .clean-header,
+.select-account-page.dark-theme .clean-header,
+.active-accounts-page.dark-theme .clean-header,
+.inactive-accounts-page.dark-theme .clean-header,
+.account-page.dark-theme .clean-header,
+.expediente-page.dark-theme .clean-header,
+.checklist-captura-page.dark-theme .clean-header,
+.presentacion-inicial-page.dark-theme .clean-header,
+.workhub-page.dark-theme .clean-header,
+.construction-page.dark-theme .clean-header {
+    background: rgba(28, 28, 30, 0.4);
+    border-bottom-color: rgba(84, 84, 88, 0.65);
+}
+
+/* Light theme header styles for all containers */
+.overview-clean.light-theme .clean-header,
+.overview-main-page.light-theme .clean-header,
+.overview-page.light-theme .clean-header,
+.client-dashboard-page.light-theme .clean-header,
+.select-account-page.light-theme .clean-header,
+.active-accounts-page.light-theme .clean-header,
+.inactive-accounts-page.light-theme .clean-header,
+.account-page.light-theme .clean-header,
+.expediente-page.light-theme .clean-header,
+.checklist-captura-page.light-theme .clean-header,
+.presentacion-inicial-page.light-theme .clean-header,
+.workhub-page.light-theme .clean-header,
+.construction-page.light-theme .clean-header {
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Hide border for expediente, checklist and presentacion pages specifically */
+.expediente-page .clean-header,
+.checklist-captura-page .clean-header,
+.presentacion-inicial-page .clean-header {
+    border-bottom: none !important;
+}
+
+.header-content {
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem 2rem 1rem 0;
+    display: grid;
+    grid-template-columns: 400px 1fr 200px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-left {
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.header-center {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-self: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Back button */
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+/* Dark theme back button styles for all containers */
+.overview-clean.dark-theme .back-button,
+.overview-main-page.dark-theme .back-button,
+.overview-page.dark-theme .back-button,
+.client-dashboard-page.dark-theme .back-button,
+.select-account-page.dark-theme .back-button,
+.active-accounts-page.dark-theme .back-button,
+.inactive-accounts-page.dark-theme .back-button,
+.account-page.dark-theme .back-button,
+.expediente-page.dark-theme .back-button,
+.checklist-captura-page.dark-theme .back-button,
+.presentacion-inicial-page.dark-theme .back-button,
+.workhub-page.dark-theme .back-button,
+.construction-page.dark-theme .back-button {
+    background: rgba(0, 122, 255, 0.1);
+    color: #0A84FF;
+    border: 1px solid rgba(0, 122, 255, 0.2);
+}
+
+.overview-clean.dark-theme .back-button:hover,
+.overview-main-page.dark-theme .back-button:hover,
+.overview-page.dark-theme .back-button:hover,
+.client-dashboard-page.dark-theme .back-button:hover,
+.select-account-page.dark-theme .back-button:hover,
+.active-accounts-page.dark-theme .back-button:hover,
+.inactive-accounts-page.dark-theme .back-button:hover,
+.account-page.dark-theme .back-button:hover,
+.expediente-page.dark-theme .back-button:hover,
+.checklist-captura-page.dark-theme .back-button:hover,
+.presentacion-inicial-page.dark-theme .back-button:hover,
+.workhub-page.dark-theme .back-button:hover,
+.construction-page.dark-theme .back-button:hover {
+    background: rgba(0, 122, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Light theme back button styles for all containers */
+.overview-clean.light-theme .back-button,
+.overview-main-page.light-theme .back-button,
+.overview-page.light-theme .back-button,
+.client-dashboard-page.light-theme .back-button,
+.select-account-page.light-theme .back-button,
+.active-accounts-page.light-theme .back-button,
+.inactive-accounts-page.light-theme .back-button,
+.account-page.light-theme .back-button,
+.expediente-page.light-theme .back-button,
+.checklist-captura-page.light-theme .back-button,
+.presentacion-inicial-page.light-theme .back-button,
+.workhub-page.light-theme .back-button,
+.construction-page.light-theme .back-button {
+    background: rgba(0, 122, 255, 0.1);
+    color: #007AFF;
+    border: 1px solid rgba(0, 122, 255, 0.2);
+}
+
+.overview-clean.light-theme .back-button:hover,
+.overview-main-page.light-theme .back-button:hover,
+.overview-page.light-theme .back-button:hover,
+.client-dashboard-page.light-theme .back-button:hover,
+.select-account-page.light-theme .back-button:hover,
+.active-accounts-page.light-theme .back-button:hover,
+.inactive-accounts-page.light-theme .back-button:hover,
+.account-page.light-theme .back-button:hover,
+.expediente-page.light-theme .back-button:hover,
+.checklist-captura-page.light-theme .back-button:hover,
+.presentacion-inicial-page.light-theme .back-button:hover,
+.workhub-page.light-theme .back-button:hover,
+.construction-page.light-theme .back-button:hover {
+    background: rgba(0, 122, 255, 0.15);
+    transform: scale(1.05);
+}
+
+/* Header title */
+.header-title {
+    text-align: center;
+}
+
+.header-title h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+    letter-spacing: -0.5px;
+    color: #007AFF;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.header-title p {
+    font-size: 15px;
+    margin: 0;
+    opacity: 0.6;
+    transition: color 0.3s ease;
+}
+
+/* Dark theme subtitle */
+.overview-clean.dark-theme .header-title p,
+.overview-main-page.dark-theme .header-title p,
+.overview-page.dark-theme .header-title p,
+.client-dashboard-page.dark-theme .header-title p,
+.select-account-page.dark-theme .header-title p,
+.active-accounts-page.dark-theme .header-title p,
+.inactive-accounts-page.dark-theme .header-title p,
+.account-page.dark-theme .header-title p,
+.expediente-page.dark-theme .header-title p,
+.checklist-captura-page.dark-theme .header-title p,
+.presentacion-inicial-page.dark-theme .header-title p,
+.construction-page.dark-theme .header-title p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Light theme subtitle */
+.overview-clean.light-theme .header-title p,
+.overview-main-page.light-theme .header-title p,
+.overview-page.light-theme .header-title p,
+.client-dashboard-page.light-theme .header-title p,
+.select-account-page.light-theme .header-title p,
+.active-accounts-page.light-theme .header-title p,
+.inactive-accounts-page.light-theme .header-title p,
+.account-page.light-theme .header-title p,
+.expediente-page.light-theme .header-title p,
+.checklist-captura-page.light-theme .header-title p,
+.presentacion-inicial-page.light-theme .header-title p,
+.construction-page.light-theme .header-title p {
+    color: #1a202c !important;
+    opacity: 1 !important;
+}
+
+/* Extra specificity for expediente, checklist and presentacion page subtitle in light mode */
+.expediente-page.light-theme .clean-header .header-title p,
+.checklist-captura-page.light-theme .clean-header .header-title p,
+.presentacion-inicial-page.light-theme .clean-header .header-title p {
+    color: #2d3748 !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+
+.theme-toggle-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark theme theme toggle button styles for all containers */
+.overview-clean.dark-theme .theme-toggle-btn,
+.overview-main-page.dark-theme .theme-toggle-btn,
+.overview-page.dark-theme .theme-toggle-btn,
+.client-dashboard-page.dark-theme .theme-toggle-btn,
+.select-account-page.dark-theme .theme-toggle-btn,
+.active-accounts-page.dark-theme .theme-toggle-btn,
+.inactive-accounts-page.dark-theme .theme-toggle-btn,
+.account-page.dark-theme .theme-toggle-btn,
+.construction-page.dark-theme .theme-toggle-btn {
+    background: rgba(118, 118, 128, 0.12);
+}
+
+.overview-clean.dark-theme .theme-toggle-btn:hover,
+.overview-main-page.dark-theme .theme-toggle-btn:hover,
+.overview-page.dark-theme .theme-toggle-btn:hover,
+.client-dashboard-page.dark-theme .theme-toggle-btn:hover,
+.select-account-page.dark-theme .theme-toggle-btn:hover,
+.active-accounts-page.dark-theme .theme-toggle-btn:hover,
+.inactive-accounts-page.dark-theme .theme-toggle-btn:hover,
+.account-page.dark-theme .theme-toggle-btn:hover,
+.construction-page.dark-theme .theme-toggle-btn:hover {
+    background: rgba(118, 118, 128, 0.24);
+    transform: scale(1.1);
+}
+
+/* Light theme theme toggle button styles for all containers */
+.overview-clean.light-theme .theme-toggle-btn,
+.overview-main-page.light-theme .theme-toggle-btn,
+.overview-page.light-theme .theme-toggle-btn,
+.client-dashboard-page.light-theme .theme-toggle-btn,
+.select-account-page.light-theme .theme-toggle-btn,
+.active-accounts-page.light-theme .theme-toggle-btn,
+.inactive-accounts-page.light-theme .theme-toggle-btn,
+.account-page.light-theme .theme-toggle-btn,
+.construction-page.light-theme .theme-toggle-btn {
+    background: rgba(118, 118, 128, 0.12);
+}
+
+.overview-clean.light-theme .theme-toggle-btn:hover,
+.overview-main-page.light-theme .theme-toggle-btn:hover,
+.overview-page.light-theme .theme-toggle-btn:hover,
+.client-dashboard-page.light-theme .theme-toggle-btn:hover,
+.select-account-page.light-theme .theme-toggle-btn:hover,
+.active-accounts-page.light-theme .theme-toggle-btn:hover,
+.inactive-accounts-page.light-theme .theme-toggle-btn:hover,
+.account-page.light-theme .theme-toggle-btn:hover,
+.construction-page.light-theme .theme-toggle-btn:hover {
+    background: rgba(118, 118, 128, 0.24);
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header-content {
+        grid-template-columns: auto 1fr auto;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .header-title h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .header-left {
+        justify-self: center;
+    }
+
+    .header-right {
+        justify-self: center;
+    }
+}
+
+/* Breadcrumbs */
+.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    gap: -0.1rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.75rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 400;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    margin-top: 0.3rem;
+    min-height: 24px;
+    position: absolute;
+    left: 0;
+    right: auto;
+    width: auto;
+    min-width: 150px;
+    max-width: calc(100vw - 400px);
+    margin-left: 0;
+    z-index: 5;
+}
+
+/* When there's no back button, make breadcrumbs more compact */
+.header-left:not(:has(.back-button)) .breadcrumb-container {
+    margin-top: 0;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    position: absolute;
+    left: 0;
+    right: auto;
+    width: auto;
+    min-width: 150px;
+    max-width: calc(100vw - 400px);
+    margin-left: 0;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Dark theme breadcrumb container */
+.overview-clean.dark-theme .breadcrumb-container,
+.overview-page.dark-theme .breadcrumb-container,
+.client-dashboard-page.dark-theme .breadcrumb-container,
+.select-account-page.dark-theme .breadcrumb-container,
+.active-accounts-page.dark-theme .breadcrumb-container,
+.inactive-accounts-page.dark-theme .breadcrumb-container,
+.account-page.dark-theme .breadcrumb-container,
+.expediente-page.dark-theme .breadcrumb-container,
+.checklist-captura-page.dark-theme .breadcrumb-container,
+.presentacion-inicial-page.dark-theme .breadcrumb-container {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overview-clean.dark-theme .breadcrumb-container:hover,
+.overview-page.dark-theme .breadcrumb-container:hover,
+.client-dashboard-page.dark-theme .breadcrumb-container:hover,
+.active-accounts-page.dark-theme .breadcrumb-container:hover,
+.inactive-accounts-page.dark-theme .breadcrumb-container:hover,
+.account-page.dark-theme .breadcrumb-container:hover,
+.expediente-page.dark-theme .breadcrumb-container:hover,
+.checklist-captura-page.dark-theme .breadcrumb-container:hover,
+.presentacion-inicial-page.dark-theme .breadcrumb-container:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Light theme breadcrumb container */
+.overview-clean.light-theme .breadcrumb-container,
+.overview-page.light-theme .breadcrumb-container,
+.client-dashboard-page.light-theme .breadcrumb-container,
+.select-account-page.light-theme .breadcrumb-container,
+.active-accounts-page.light-theme .breadcrumb-container,
+.inactive-accounts-page.light-theme .breadcrumb-container,
+.account-page.light-theme .breadcrumb-container,
+.expediente-page.light-theme .breadcrumb-container,
+.checklist-captura-page.light-theme .breadcrumb-container,
+.presentacion-inicial-page.light-theme .breadcrumb-container {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.overview-clean.light-theme .breadcrumb-container:hover,
+.overview-page.light-theme .breadcrumb-container:hover,
+.client-dashboard-page.light-theme .breadcrumb-container:hover,
+.active-accounts-page.light-theme .breadcrumb-container:hover,
+.inactive-accounts-page.light-theme .breadcrumb-container:hover,
+.account-page.light-theme .breadcrumb-container:hover,
+.expediente-page.light-theme .breadcrumb-container:hover,
+.checklist-captura-page.light-theme .breadcrumb-container:hover,
+.presentacion-inicial-page.light-theme .breadcrumb-container:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.breadcrumb-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    position: relative;
+    white-space: nowrap;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: none;
+    flex-shrink: 0;
+}
+
+/* Dark theme breadcrumb links */
+.overview-clean.dark-theme .breadcrumb-link,
+.overview-page.dark-theme .breadcrumb-link,
+.client-dashboard-page.dark-theme .breadcrumb-link,
+.active-accounts-page.dark-theme .breadcrumb-link,
+.inactive-accounts-page.dark-theme .breadcrumb-link,
+.account-page.dark-theme .breadcrumb-link,
+.expediente-page.dark-theme .breadcrumb-link,
+.checklist-captura-page.dark-theme .breadcrumb-link,
+.presentacion-inicial-page.dark-theme .breadcrumb-link {
+    color: #0A84FF;
+}
+
+.overview-clean.dark-theme .breadcrumb-link:hover,
+.overview-page.dark-theme .breadcrumb-link:hover,
+.active-accounts-page.dark-theme .breadcrumb-link:hover,
+.inactive-accounts-page.dark-theme .breadcrumb-link:hover,
+.account-page.dark-theme .breadcrumb-link:hover,
+.expediente-page.dark-theme .breadcrumb-link:hover,
+.checklist-captura-page.dark-theme .breadcrumb-link:hover,
+.presentacion-inicial-page.dark-theme .breadcrumb-link:hover {
+    color: #409CFF;
+    background: rgba(10, 132, 255, 0.1);
+    transform: scale(1.02);
+}
+
+.overview-clean.dark-theme .breadcrumb-link:active,
+.overview-page.dark-theme .breadcrumb-link:active,
+.active-accounts-page.dark-theme .breadcrumb-link:active,
+.inactive-accounts-page.dark-theme .breadcrumb-link:active,
+.account-page.dark-theme .breadcrumb-link:active,
+.expediente-page.dark-theme .breadcrumb-link:active,
+.checklist-captura-page.dark-theme .breadcrumb-link:active,
+.presentacion-inicial-page.dark-theme .breadcrumb-link:active {
+    transform: scale(0.98);
+    background: rgba(10, 132, 255, 0.15);
+}
+
+/* Light theme breadcrumb links */
+.overview-clean.light-theme .breadcrumb-link,
+.overview-page.light-theme .breadcrumb-link,
+.active-accounts-page.light-theme .breadcrumb-link,
+.inactive-accounts-page.light-theme .breadcrumb-link,
+.account-page.light-theme .breadcrumb-link,
+.expediente-page.light-theme .breadcrumb-link,
+.checklist-captura-page.light-theme .breadcrumb-link,
+.presentacion-inicial-page.light-theme .breadcrumb-link {
+    color: #007AFF;
+}
+
+.overview-clean.light-theme .breadcrumb-link:hover,
+.overview-page.light-theme .breadcrumb-link:hover,
+.active-accounts-page.light-theme .breadcrumb-link:hover,
+.inactive-accounts-page.light-theme .breadcrumb-link:hover,
+.account-page.light-theme .breadcrumb-link:hover,
+.expediente-page.light-theme .breadcrumb-link:hover,
+.checklist-captura-page.light-theme .breadcrumb-link:hover,
+.presentacion-inicial-page.light-theme .breadcrumb-link:hover {
+    color: #0051D5;
+    background: rgba(0, 122, 255, 0.1);
+    transform: scale(1.02);
+}
+
+.overview-clean.light-theme .breadcrumb-link:active,
+.overview-page.light-theme .breadcrumb-link:active,
+.active-accounts-page.light-theme .breadcrumb-link:active,
+.inactive-accounts-page.light-theme .breadcrumb-link:active,
+.account-page.light-theme .breadcrumb-link:active,
+.expediente-page.light-theme .breadcrumb-link:active,
+.checklist-captura-page.light-theme .breadcrumb-link:active,
+.presentacion-inicial-page.light-theme .breadcrumb-link:active {
+    transform: scale(0.98);
+    background: rgba(0, 122, 255, 0.15);
+}
+
+.breadcrumb-separator {
+    font-family: inherit;
+    font-size: 0.7rem;
+    font-weight: 300;
+    opacity: 0.5;
+    user-select: none;
+    transition: color 0.3s ease;
+    margin: 0 0.01rem;
+}
+
+/* Dark theme separators */
+.overview-clean.dark-theme .breadcrumb-separator,
+.overview-page.dark-theme .breadcrumb-separator,
+.client-dashboard-page.dark-theme .breadcrumb-separator,
+.active-accounts-page.dark-theme .breadcrumb-separator,
+.inactive-accounts-page.dark-theme .breadcrumb-separator,
+.account-page.dark-theme .breadcrumb-separator,
+.expediente-page.dark-theme .breadcrumb-separator,
+.checklist-captura-page.dark-theme .breadcrumb-separator,
+.presentacion-inicial-page.dark-theme .breadcrumb-separator {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Light theme separators */
+.overview-clean.light-theme .breadcrumb-separator,
+.overview-page.light-theme .breadcrumb-separator,
+.client-dashboard-page.light-theme .breadcrumb-separator,
+.active-accounts-page.light-theme .breadcrumb-separator,
+.inactive-accounts-page.light-theme .breadcrumb-separator,
+.account-page.light-theme .breadcrumb-separator,
+.expediente-page.light-theme .breadcrumb-separator,
+.checklist-captura-page.light-theme .breadcrumb-separator,
+.presentacion-inicial-page.light-theme .breadcrumb-separator {
+    color: #718096;
+}
